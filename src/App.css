@@ -1,0 +1,53 @@
+.overall-content {
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.content {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.task-manager-body {
+  overflow-x: auto; 
+}
+
+.task-manager-body table {
+  background-color: #252525;
+  color: white;
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.task-manager-body table th, 
+.task-manager-body table td {
+  padding: 10px;
+  text-align: left; 
+  border: 1px solid #444; 
+}
+
+.task-manager-body table thead {
+  position: sticky; 
+  top: 0;
+  background-color: #333; 
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .task-manager-body table th, 
+  .task-manager-body table td {
+    font-size: 10px; 
+  }
+  .del{
+    width: 80%;
+  }
+  .edit{
+    width: 80%;
+  }
+}
